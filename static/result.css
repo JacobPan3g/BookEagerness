@@ -1,0 +1,133 @@
+body {
+    margin: 0px;
+    background-image: url(recommendbg.png);
+}
+
+#headers {
+    background-color: white;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 400px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+#userdetails {
+    margin-left: 225px;
+    line-height: 22px;
+    padding-top: 10px;
+    position: relative;
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+
+.username {
+    font: normal 20px/30px Arial;
+    margin-right: 3px;
+    margin-bottom: 10px;
+}
+
+.userstatus {
+    font: 12px/1.125 Arial,Helvetica,sans-serif;
+    margin-bottom: 8px;
+    color: gray;
+}
+
+#userimg {
+    position: absolute;
+    top: -108px;
+    left: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#main {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.title {
+    background-color: #CCCC29;
+    font-size: 22px;
+    padding-left: 10px;
+}
+
+#recommend {
+    width: 600px;
+    float: left;
+}
+
+.outside {
+    width: 600px;
+    overflow: hidden;
+    border-right: 3px dashed #CCCC29;
+    border-bottom: 3px dashed #CCCC29;
+}
+
+.result {
+    width: 580px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    line-height: 22px;
+    clear: both;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+.result img {
+    float: left;
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 91px;
+}
+
+.bookdetails {
+    margin-left: 120px;
+}
+
+.booktitle {
+    margin-top: 4px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.bookauthor {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#hotbook {
+    margin-top: 25px;
+    width: 400px;
+    float: right;
+    display: inline-block;
+}
+
+.dayre {
+    width: 150px;
+    height: 185px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 30px;
+    float: left;
+}
+
+.dayre img {
+    width: 100px;
+}
+
+.hotbooktitle {
+    font-size: 18px;
+}

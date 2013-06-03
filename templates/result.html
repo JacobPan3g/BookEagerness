@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Result</title>
+        <link rel="stylesheet" type="text/css" href="/site_media/banner.css">
+        <link rel="stylesheet" type="text/css" href="/site_media/result.css">
+    </head>
+    <body>
+        <div id="banner" class="transparent_class">
+            <img id="icon" src="/site_media/icon.png" rel="icon"/>
+            <span class="bannerwords" id="cname">
+                书觅
+            </span>
+            <span class="bannerwords" id="ename">
+                Book Eagerness
+            </span>
+            <button type="button" onclick="window.location.href='/logout/'">注销</button>
+        </div>
+
+        <div id="headers">
+            <div id="userdetails">
+                <div class="username">{{ user.name }}</div>
+                <div class="userstatus">{{ user.description }}</div>
+            </div>
+            <div id="userimg">
+                <img src="{{ user.image }}" rel="userimg"/>
+            </div>
+        </div>
+
+        <div id="main">
+            <div id="recommend">
+                <div class="title">
+                    书觅为您推荐
+                </div>
+                {% for book in result %}
+                <div class="outside">
+                    <div class="result">
+                        <a href="{{ book.link }}"><img src="{{ book.image }}" rel="book"/></a>
+                        <div class="bookdetails">
+                            <div class="booktitle"><a href="{{ book.link }}">{{book.title }}</a></div>
+                            <div class="bookauthor">{{ book.author }}</div>
+                            <div class="bookisbn10">isbn10 : {{ book.isbn10 }}</div>
+                            <div class="bookisbn13">isbn13 : {{ book.isbn13 }}</div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <div id="hotbook">
+                <div class="title">
+                    热门书籍
+                </div>
+                {% for book in dayrecommend %}
+                <div class="dayre">
+                    <a href="{{ book.link }}"><img src="{{ book.image }}" rel="book"/></a>
+                    <br/>
+                    <span class="hotbooktitle"><a href="{{ book.link }}">{{book.title }}</a></span>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+body {
+    background-image: url(loginbg.png);
+    background-repeat: no-repeat;
+    margin: 0px;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: white;
+}
+
+#main {
+    height: 180px;
+    width: 300px;
+    margin-top: 250px;
+    margin-left: 150px;
+    background-color: #CACC29;
+    border: 2px white solid;
+    text-align: center;
+    display: table;
+}
+
+form {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+form p {
+    margin: 15px;
+}
+
+input[type="submit"] {
+    height: 35px;
+    width: 80px;
+    background-color: #656614;
+    border: 0px;
+    font-size: 20px;
+    color: white;
+    margin-left: 120px;
+}
